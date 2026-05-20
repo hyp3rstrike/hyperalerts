@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --page-bg: #060816;
+  --page-bg-accent: #101d3a;
+  --panel-bg: #0e1730cc;
+  --panel-border: #ffffff2e;
+  --text-main: #e8edf8;
+  --text-soft: #b9c4de;
+  --accent: #31d2bb;
+  --accent-strong: #53f4de;
+  --danger: #ff6c63;
+}
+
+@theme inline {
+  --font-sans: var(--font-space-grotesk);
+  --font-mono: var(--font-ibm-plex-mono);
+}
+
+body {
+  background:
+    radial-gradient(circle at 15% 5%, #1a3b7b 0%, transparent 40%),
+    radial-gradient(circle at 85% 0%, #104e4f 0%, transparent 36%),
+    linear-gradient(180deg, var(--page-bg), var(--page-bg-accent));
+  color: var(--text-main);
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.ha-shell {
+  width: min(1100px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.ha-panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.ha-muted {
+  color: var(--text-soft);
+}
+
+.ha-code {
+  font-family: var(--font-ibm-plex-mono), monospace;
+}
