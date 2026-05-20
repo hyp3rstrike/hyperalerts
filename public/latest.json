@@ -1,10 +1,10 @@
 ﻿{
-    "version":  "0.2.4",
-    "publishedAt":  "2026-05-20T03:25:10Z",
-    "notes":  "- Initial scaffolding of self-patching mechanisms for future releases",
+    "version":  "0.2.5",
+    "publishedAt":  "2026-05-20T03:39:10Z",
+    "notes":  "- Version bump after some CI/CD workflow changes related to self-patch mechanism",
     "windows":  {
-                    "url":  "https://github.com/hyp3rstrike/hyperalerts/releases/download/v0.2.4/Hyper.Alerts.0.2.3.exe",
-                    "sha256":  "acf5d92eb5b7d9854236c364d67607c7df1818b33b870e84f01359065638ce37",
-                    "size":  176836684
+                    "url":  "https://github.com/hyp3rstrike/hyperalerts/releases/download/v0.2.5/Hyper.Alerts.0.2.5.exe",
+                    "sha256":  "8f40e0f2cbeb6c124b1a9a9d3c27ea24480a4da6ac7bdf04c3c65be50f7ccf9c",
+                    "size":  176835164
                 }
 }
