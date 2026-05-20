@@ -21,7 +21,7 @@ export default function ReleasesPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://api.github.com/repos/hyp3rstrike/hyper-alerts-site/releases?per_page=12", {
+    fetch("https://api.github.com/repos/hyp3rstrike/hyperalerts/releases?per_page=12", {
       cache: "no-store",
     })
       .then((response) => (response.ok ? response.json() : Promise.reject()))

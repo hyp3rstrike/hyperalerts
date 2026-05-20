@@ -18,7 +18,7 @@ export function useLatestRelease() {
   const [data, setData] = useState<LatestManifest | null>(null);
 
   useEffect(() => {
-    fetch(`/hyper-alerts-site/latest.json?ts=${Date.now()}`, { cache: "no-store" })
+    fetch(`/hyperalerts/latest.json?ts=${Date.now()}`, { cache: "no-store" })
       .then((response) => (response.ok ? response.json() : Promise.reject()))
       .then((json: LatestManifest) => setData(json))
       .catch(() => {

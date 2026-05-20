@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hyperx64.com/hyper-alerts-site/"),
+  metadataBase: new URL("https://hyperx64.com/hyperalerts/"),
   title: "Hyper Alerts",
   description: "Local-first stream alerts for OBS and Streamer.bot.",
   icons: {

@@ -3,7 +3,7 @@
     "publishedAt":  "2026-05-20T01:14:50Z",
     "notes":  "Automated release",
     "windows":  {
-                    "url":  "https://github.com/hyp3rstrike/hyper-alerts-site/releases/download/v0.2.2/Hyper.Alerts.0.2.2.exe",
+                    "url":  "https://github.com/hyp3rstrike/hyperalerts/releases/download/v0.2.2/Hyper.Alerts.0.2.2.exe",
                     "sha256":  "df73ec5bedee3bfa4ffa9a40894024b4c83d1e22baaab1b2892c064f207b8ca4",
                     "size":  176798397
                 }
