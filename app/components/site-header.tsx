@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 const navItems = [
   { href: "/", label: "Overview" },
@@ -9,12 +8,15 @@ const navItems = [
 ];
 
 export function SiteHeader() {
+  const basePath = process.env.GITHUB_ACTIONS === "true" ? "/hyperalerts" : "";
+
   return (
     <header className="ha-shell py-6">
       <div className="ha-panel flex items-center justify-between px-5 py-4">
         <Link href="/" className="flex items-center gap-3 text-lg font-semibold tracking-wide">
-          <Image
-            src="/icons/hyper-alerts-icon.png"
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={`${basePath}/icons/hyper-alerts-icon.png`}
             alt="Hyper Alerts logo"
             width={34}
             height={34}

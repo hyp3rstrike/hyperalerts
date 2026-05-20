@@ -17,20 +17,20 @@ export const metadata: Metadata = {
   title: "Hyper Alerts",
   description: "Local-first stream alerts for OBS and Streamer.bot.",
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/icons/hyper-alerts-icon.png",
+    icon: "/hyperalerts/favicon.ico",
+    shortcut: "/hyperalerts/favicon.ico",
+    apple: "/hyperalerts/icons/hyper-alerts-icon.png",
   },
   openGraph: {
     title: "Hyper Alerts",
     description: "Local-first stream alerts for OBS and Streamer.bot.",
-    images: ["/icons/hyper-alerts-icon.png"],
+    images: ["https://hyperx64.com/hyperalerts/icons/hyper-alerts-icon.png"],
   },
   twitter: {
     card: "summary",
     title: "Hyper Alerts",
     description: "Local-first stream alerts for OBS and Streamer.bot.",
-    images: ["/icons/hyper-alerts-icon.png"],
+    images: ["https://hyperx64.com/hyperalerts/icons/hyper-alerts-icon.png"],
   },
 };
 
