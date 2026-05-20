@@ -1,10 +1,10 @@
 ﻿{
-    "version":  "0.2.3",
-    "publishedAt":  "2026-05-20T02:54:22Z",
-    "notes":  "- Minor fixes",
+    "version":  "0.2.4",
+    "publishedAt":  "2026-05-20T03:25:10Z",
+    "notes":  "- Initial scaffolding of self-patching mechanisms for future releases",
     "windows":  {
-                    "url":  "https://github.com/hyp3rstrike/hyperalerts/releases/download/v0.2.3/Hyper.Alerts.0.2.3.exe",
-                    "sha256":  "3608e7306423c7252d0c2fb3e376caede58d8913d5367e9cba3282a76ae3b539",
-                    "size":  176827126
+                    "url":  "https://github.com/hyp3rstrike/hyperalerts/releases/download/v0.2.4/Hyper.Alerts.0.2.3.exe",
+                    "sha256":  "acf5d92eb5b7d9854236c364d67607c7df1818b33b870e84f01359065638ce37",
+                    "size":  176836684
                 }
 }
