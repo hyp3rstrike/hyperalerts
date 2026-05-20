@@ -1,29 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --page-bg: #060816;
-  --page-bg-accent: #101d3a;
-  --panel-bg: #0e1730cc;
-  --panel-border: #ffffff2e;
-  --text-main: #e8edf8;
-  --text-soft: #b9c4de;
-  --accent: #31d2bb;
-  --accent-strong: #53f4de;
-  --danger: #ff6c63;
+  --page-bg: #09090b;
+  --page-bg-accent: #09090b;
+  --panel-bg: #09090b;
+  --panel-border: #27272a;
+  --text-main: #e4e4e7;
+  --text-soft: #a1a1aa;
+  --accent: #22c55e;
+  --accent-strong: #4ade80;
+  --danger: #ef4444;
 }
 
 @theme inline {
-  --font-sans: var(--font-space-grotesk);
-  --font-mono: var(--font-ibm-plex-mono);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
 body {
-  background:
-    radial-gradient(circle at 15% 5%, #1a3b7b 0%, transparent 40%),
-    radial-gradient(circle at 85% 0%, #104e4f 0%, transparent 36%),
-    linear-gradient(180deg, var(--page-bg), var(--page-bg-accent));
+  background: linear-gradient(180deg, var(--page-bg), var(--page-bg-accent));
   color: var(--text-main);
-  font-family: var(--font-space-grotesk), sans-serif;
+  font-family: var(--font-geist-sans), sans-serif;
 }
 
 a {
@@ -38,8 +35,7 @@ a {
 .ha-panel {
   background: var(--panel-bg);
   border: 1px solid var(--panel-border);
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
+  border-radius: 16px;
 }
 
 .ha-muted {

@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { SiteFooter } from "@/app/components/site-footer";
-import { SiteHeader } from "@/app/components/site-header";
+import { PageFrame } from "@/app/components/page-frame";
+import { CtaButton, Panel } from "@/app/components/ui";
 import { RELEASES_URL } from "@/lib/site-data";
 
 type GithubRelease = {
@@ -36,9 +36,9 @@ export default function ReleasesPage() {
   const hasReleases = useMemo(() => releases.length > 0, [releases]);
 
   return (
-    <div className="flex flex-1 flex-col">
-      <SiteHeader />
-      <main className="ha-shell ha-panel p-8 md:p-10">
+    <PageFrame>
+      <main className="ha-shell">
+        <Panel>
         <p className="ha-code text-sm text-[var(--accent)]">RELEASES</p>
         <h1 className="mt-3 text-4xl font-semibold tracking-tight">Release history</h1>
         <p className="ha-muted mt-4 max-w-3xl leading-relaxed">
@@ -51,7 +51,7 @@ export default function ReleasesPage() {
           )}
           {!loading &&
             releases.map((release) => (
-              <article key={release.id} className="rounded-2xl border border-white/15 bg-white/5 p-6">
+              <article key={release.id} className="rounded-2xl border border-zinc-800 bg-zinc-900 p-6">
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <h2 className="text-xl font-semibold">{release.tag_name}</h2>
                   <span className="ha-code text-sm ha-muted">
@@ -61,22 +61,13 @@ export default function ReleasesPage() {
                 <p className="ha-muted mt-3 leading-relaxed">
                   {(release.body || "No release notes provided.").split("\n")[0]}
                 </p>
-                <a
-                  href={release.html_url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-4 inline-block text-sm font-semibold text-[var(--accent)] hover:text-[var(--accent-strong)]"
-                >
-                  Open release
-                </a>
+                <CtaButton href={release.html_url} label="Open release" external variant="ghost" className="mt-4 text-sm" />
               </article>
             ))}
         </div>
-        <a href={RELEASES_URL} target="_blank" rel="noreferrer" className="mt-8 inline-block rounded-full border border-[var(--accent)] px-6 py-3 font-semibold text-[var(--accent)] hover:text-[var(--accent-strong)]">
-          View all GitHub releases
-        </a>
+        <CtaButton href={RELEASES_URL} label="View all GitHub releases" external variant="ghost" className="mt-8 border border-[var(--accent)]" />
+        </Panel>
       </main>
-      <SiteFooter />
-    </div>
+    </PageFrame>
   );
 }

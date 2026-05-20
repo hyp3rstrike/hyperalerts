@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const navItems = [
   { href: "/", label: "Overview" },
@@ -11,8 +12,15 @@ export function SiteHeader() {
   return (
     <header className="ha-shell py-6">
       <div className="ha-panel flex items-center justify-between px-5 py-4">
-        <Link href="/" className="text-lg font-semibold tracking-wide">
-          Hyper Alerts
+        <Link href="/" className="flex items-center gap-3 text-lg font-semibold tracking-wide">
+          <Image
+            src="/icons/hyper-alerts-icon.png"
+            alt="Hyper Alerts logo"
+            width={34}
+            height={34}
+            className="rounded-md border border-zinc-700 bg-zinc-900"
+          />
+          <span>Hyper Alerts</span>
         </Link>
         <nav className="flex gap-4 text-sm md:gap-6 md:text-base">
           {navItems.map((item) => (

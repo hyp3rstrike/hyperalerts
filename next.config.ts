@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   basePath: isGithubActions ? "/hyper-alerts-site" : "",
   assetPrefix: isGithubActions ? "/hyper-alerts-site/" : undefined,
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

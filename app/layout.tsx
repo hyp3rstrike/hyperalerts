@@ -1,21 +1,37 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono, Space_Grotesk } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const ibmPlexMono = IBM_Plex_Mono({
-  variable: "--font-ibm-plex-mono",
-  weight: ["400", "500", "600"],
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hyperx64.com/hyper-alerts-site/"),
   title: "Hyper Alerts",
   description: "Local-first stream alerts for OBS and Streamer.bot.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/icons/hyper-alerts-icon.png",
+  },
+  openGraph: {
+    title: "Hyper Alerts",
+    description: "Local-first stream alerts for OBS and Streamer.bot.",
+    images: ["/icons/hyper-alerts-icon.png"],
+  },
+  twitter: {
+    card: "summary",
+    title: "Hyper Alerts",
+    description: "Local-first stream alerts for OBS and Streamer.bot.",
+    images: ["/icons/hyper-alerts-icon.png"],
+  },
 };
 
 export default function RootLayout({
@@ -26,7 +42,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${spaceGrotesk.variable} ${ibmPlexMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

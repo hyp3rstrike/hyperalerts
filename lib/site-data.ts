@@ -17,4 +17,30 @@ export const features = [
     title: "Portable release flow",
     body: "Download a portable executable and keep control over where the app lives.",
   },
+  {
+    title: "No account required",
+    body: "No sign-in required. Your configuration and media stay local, and you keep full control of your data.",
+  },
+  {
+    title: "Automatic subaction patching",
+    body: "Keep your Streamer.bot action and subactions aligned with new Hyper Alerts updates using the built-in patcher in a single click.",
+  },
+];
+
+export const testimonials = [
+  {
+    quote:
+      "I swapped from cloud alerts to Hyper Alerts and my setup is finally predictable every stream night.",
+    author: "Twitch Variety Streamer",
+  },
+  {
+    quote:
+      "The Streamer.bot patch flow saved me from manually redoing subactions after each update.",
+    author: "Streamer.bot Power User",
+  },
+  {
+    quote:
+      "Local media control plus one-click updates is exactly what I wanted for a no-drama overlay stack.",
+    author: "Indie Creator",
+  },
 ];
