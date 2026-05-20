@@ -1,10 +1,10 @@
 ﻿{
-    "version":  "0.2.7",
-    "publishedAt":  "2026-05-20T04:09:53Z",
-    "notes":  "- Version bump to test downloads with prod exe",
+    "version":  "0.2.8",
+    "publishedAt":  "2026-05-20T04:56:35Z",
+    "notes":  "- Fixed self-patching mechanism after multiple local testing iterations\r\n- Renamed the exe to HyperAlerts.exe instead of having the trailing version so they can be updated in place (which would have been a problem for people using shortcuts)",
     "windows":  {
-                    "url":  "https://github.com/hyp3rstrike/hyperalerts/releases/download/v0.2.7/Hyper.Alerts.0.2.7.exe",
-                    "sha256":  "e2585ad909282428fdc8b56cd0f3691f339436b7c127fa6e2b9d260d2c51c085",
-                    "size":  176793490
+                    "url":  "https://github.com/hyp3rstrike/hyperalerts/releases/download/v0.2.8/HyperAlerts.exe",
+                    "sha256":  "174b6ddcbe9452c44c01caeb967692a618f853d441dc1dd21c4962f310ebf367",
+                    "size":  176828631
                 }
 }
