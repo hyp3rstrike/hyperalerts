@@ -1,10 +1,10 @@
 ﻿{
-    "version":  "0.2.5",
-    "publishedAt":  "2026-05-20T03:39:10Z",
-    "notes":  "- Version bump after some CI/CD workflow changes related to self-patch mechanism",
+    "version":  "0.2.6",
+    "publishedAt":  "2026-05-20T03:57:55Z",
+    "notes":  "- Fixes to the self-patching mechanism",
     "windows":  {
-                    "url":  "https://github.com/hyp3rstrike/hyperalerts/releases/download/v0.2.5/Hyper.Alerts.0.2.5.exe",
-                    "sha256":  "8f40e0f2cbeb6c124b1a9a9d3c27ea24480a4da6ac7bdf04c3c65be50f7ccf9c",
-                    "size":  176835164
+                    "url":  "https://github.com/hyp3rstrike/hyperalerts/releases/download/v0.2.6/Hyper.Alerts.0.2.6.exe",
+                    "sha256":  "8b9120f5f2d5582303d5e0a1cee571d6491df72b1887e7e48cdfa390cc4399c2",
+                    "size":  176824618
                 }
 }
