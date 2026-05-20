@@ -5,8 +5,8 @@ const isGithubActions = process.env.GITHUB_ACTIONS === "true";
 const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
-  basePath: isGithubActions ? "/hyperalerts" : "",
-  assetPrefix: isGithubActions ? "/hyperalerts/" : undefined,
+  basePath: isGithubActions ? "/hyper-alerts-site" : "",
+  assetPrefix: isGithubActions ? "/hyper-alerts-site/" : undefined,
 };
 
 export default nextConfig;

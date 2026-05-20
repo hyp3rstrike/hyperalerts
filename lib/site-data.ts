@@ -1,4 +1,4 @@
-export const RELEASES_URL = "https://github.com/hyp3rstrike/hyperalerts/releases";
+export const RELEASES_URL = "https://github.com/hyp3rstrike/hyper-alerts-site/releases";
 
 export const features = [
   {
