@@ -1,10 +1,10 @@
 ﻿{
-    "version":  "0.2.9",
-    "publishedAt":  "2026-05-20T06:24:37Z",
-    "notes":  "- Fixed self-patching mechanism (I hope, it works on my machine lol)",
+    "version":  "0.2.10",
+    "publishedAt":  "2026-05-20T10:34:49Z",
+    "notes":  "- Disable automatic detection of Streamer.bot `actions.json` files due to a discovery bug\r\n- Replaced it with a manual file selection until I can be bothered getting this sorted",
     "windows":  {
-                    "url":  "https://github.com/hyp3rstrike/hyperalerts/releases/download/v0.2.9/HyperAlerts.exe",
-                    "sha256":  "2be64baafeb25f50aaba4395f43d93acd1db3f88ec1349d3b94be9cc1a84088f",
-                    "size":  176824701
+                    "url":  "https://github.com/hyp3rstrike/hyperalerts/releases/download/v0.2.10/HyperAlerts.exe",
+                    "sha256":  "51ddc4fcf0f092faeacf122043e7fd3afc4d9eca8e16d7011b03b785218b15f0",
+                    "size":  176830762
                 }
 }
