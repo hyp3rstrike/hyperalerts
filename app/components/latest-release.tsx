@@ -48,6 +48,7 @@ export function useLatestRelease() {
     publishedAt: formattedDate,
     notes: data?.notes ?? "Loading release notes...",
     url: data?.windows.url ?? "#",
+    patchNotesUrl: data ? `${RELEASES_URL}/tag/v${encodeURIComponent(data.version)}` : RELEASES_URL,
   };
 }
 
@@ -66,12 +67,18 @@ export function LatestReleasePanel() {
       <div className="mt-7 flex flex-col gap-3 sm:flex-row">
         <CtaButton
           href={latestRelease.url}
-          label="Download latest"
+          label="Download"
           variant="ghost"
           className="border border-[var(--accent)]"
           disabled={latestRelease.loading}
         />
-        <CtaButton href={RELEASES_URL} label="Browse releases" external variant="secondary" />
+        <CtaButton
+          href={latestRelease.patchNotesUrl}
+          label="Patch notes"
+          external
+          variant="secondary"
+          disabled={latestRelease.loading}
+        />
       </div>
     </Panel>
   );
