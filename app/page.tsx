@@ -5,6 +5,8 @@ import { CtaButton, InfoCard, Panel } from "./components/ui";
 import { renderMarkdown } from "@/lib/markdown";
 
 export default function Home() {
+  const basePath = process.env.GITHUB_ACTIONS === "true" ? "/hyperalerts" : "";
+
   return (
     <PageFrame>
       <main className="ha-shell grid gap-8 pb-8 md:grid-cols-[1.1fr_0.9fr]">
@@ -33,21 +35,33 @@ export default function Home() {
           <h2 className="text-2xl font-semibold">What creators are saying</h2>
           <div className="mt-6 grid gap-4">
             {testimonials.map((item) => (
-              <article key={item.quote} className="rounded-2xl border border-zinc-800 bg-zinc-900 p-5">
-                <div
-                  className="ha-doc-content ha-markdown-compact ha-muted"
-                  dangerouslySetInnerHTML={{ __html: renderMarkdown(`\"${item.quote}\"`) }}
-                />
-                <p className="mt-4 text-sm font-semibold text-zinc-300">
-                  -{" "}
-                  {item.authorUrl ? (
-                    <a href={item.authorUrl} target="_blank" rel="noreferrer" className="text-[var(--accent)] hover:text-[var(--accent-strong)]">
-                      {item.author}
-                    </a>
-                  ) : (
-                    item.author
-                  )}
-                </p>
+              <article key={item.quote} className="flex flex-col gap-5 rounded-2xl border border-zinc-800 bg-zinc-900 p-5 sm:flex-row">
+                {item.avatar ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={`${basePath}${item.avatar}`}
+                    alt={`${item.author} avatar`}
+                    width={72}
+                    height={72}
+                    className="h-[72px] w-[72px] shrink-0 rounded-full border border-zinc-700 bg-zinc-950 object-cover"
+                  />
+                ) : null}
+                <div>
+                  <div
+                    className="ha-doc-content ha-markdown-compact ha-muted"
+                    dangerouslySetInnerHTML={{ __html: renderMarkdown(`\"${item.quote}\"`) }}
+                  />
+                  <p className="mt-4 text-sm font-semibold text-zinc-300">
+                    -{" "}
+                    {item.authorUrl ? (
+                      <a href={item.authorUrl} target="_blank" rel="noreferrer" className="text-[var(--accent)] hover:text-[var(--accent-strong)]">
+                        {item.author}
+                      </a>
+                    ) : (
+                      item.author
+                    )}
+                  </p>
+                </div>
               </article>
             ))}
           </div>

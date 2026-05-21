@@ -37,5 +37,6 @@ export const testimonials = [
       "A ridiculously easy to use program where I can have all my alerts on hand and not have to upload sounds, pictures, or animations to a third party that could eventually shut down anyway. Incredibly lightweight as well, 10/10 would recommend.",
     author: "Kirimae",
     authorUrl: "https://twitch.tv/kirimae",
+    avatar: "/testies/kirimae.png",
   },
 ];
