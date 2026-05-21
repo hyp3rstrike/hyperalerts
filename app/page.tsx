@@ -16,7 +16,7 @@ export default function Home() {
             and stay fully under your control.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <CtaButton href="/download" label="Download latest" />
+            <CtaButton href="/docs/getting-started" label="Get started" />
             <CtaButton href={RELEASES_URL} label="Browse releases" external variant="secondary" />
           </div>
         </Panel>

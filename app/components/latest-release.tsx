@@ -64,7 +64,7 @@ export function LatestReleasePanel() {
       />
       <CtaButton
         href={latestRelease.url}
-        label="Direct download"
+        label={`Download v${latestRelease.version}`}
         variant="ghost"
         className="mt-7 border border-[var(--accent)]"
         disabled={latestRelease.loading}
