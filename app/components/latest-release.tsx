@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { CtaButton, Panel } from "@/app/components/ui";
+import { RELEASES_URL } from "@/lib/site-data";
 import { renderMarkdown } from "@/lib/markdown";
 
 type LatestManifest = {
@@ -62,13 +63,16 @@ export function LatestReleasePanel() {
         className="ha-doc-content ha-markdown-compact mt-5"
         dangerouslySetInnerHTML={{ __html: renderMarkdown(latestRelease.notes) }}
       />
-      <CtaButton
-        href={latestRelease.url}
-        label={`Download v${latestRelease.version}`}
-        variant="ghost"
-        className="mt-7 border border-[var(--accent)]"
-        disabled={latestRelease.loading}
-      />
+      <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+        <CtaButton
+          href={latestRelease.url}
+          label="Download latest"
+          variant="ghost"
+          className="border border-[var(--accent)]"
+          disabled={latestRelease.loading}
+        />
+        <CtaButton href={RELEASES_URL} label="Browse releases" external variant="secondary" />
+      </div>
     </Panel>
   );
 }

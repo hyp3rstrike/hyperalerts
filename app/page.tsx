@@ -1,5 +1,5 @@
 import { PageFrame } from "./components/page-frame";
-import { features, RELEASES_URL, testimonials } from "@/lib/site-data";
+import { features, testimonials } from "@/lib/site-data";
 import { LatestReleasePanel } from "./components/latest-release";
 import { CtaButton, InfoCard, Panel } from "./components/ui";
 import { renderMarkdown } from "@/lib/markdown";
@@ -17,7 +17,6 @@ export default function Home() {
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <CtaButton href="/docs/getting-started" label="Get started" />
-            <CtaButton href={RELEASES_URL} label="Browse releases" external variant="secondary" />
           </div>
         </Panel>
 
