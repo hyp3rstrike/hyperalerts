@@ -25,22 +25,17 @@ export const features = [
     title: "Automatic subaction patching",
     body: "Keep your Streamer.bot action and subactions aligned with new Hyper Alerts updates using the built-in patcher in a single click.",
   },
+  {
+    title: "PC resource conscious",
+    body: "Designed to stay lean, typically using around 100 MB of RAM with minimal CPU usage, even while alerts are playing.",
+  },
 ];
 
 export const testimonials = [
   {
     quote:
-      "I swapped from cloud alerts to Hyper Alerts and my setup is finally predictable every stream night.",
-    author: "Twitch Variety Streamer",
-  },
-  {
-    quote:
-      "The Streamer.bot patch flow saved me from manually redoing subactions after each update.",
-    author: "Streamer.bot Power User",
-  },
-  {
-    quote:
-      "Local media control plus one-click updates is exactly what I wanted for a no-drama overlay stack.",
-    author: "Indie Creator",
+      "A ridiculously easy to use program where I can have all my alerts on hand and not have to upload sounds, pictures, or animations to a third party that could eventually shut down anyway. Incredibly lightweight as well, 10/10 would recommend.",
+    author: "Kirimae",
+    authorUrl: "https://twitch.tv/kirimae",
   },
 ];
