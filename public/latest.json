@@ -1,10 +1,10 @@
 ﻿{
-    "version":  "0.2.12",
-    "publishedAt":  "2026-05-21T02:39:51Z",
-    "notes":  "- Fixes regression with global alert settings using the same alert template text for all alert types (fml)\r\n- Added cachebusting for OBS Studio",
+    "version":  "0.2.13",
+    "publishedAt":  "2026-05-21T03:09:54Z",
+    "notes":  "- Fixes cache busting doing dumb redirects",
     "windows":  {
-                    "url":  "https://github.com/hyp3rstrike/hyperalerts/releases/download/v0.2.12/HyperAlerts.exe",
-                    "sha256":  "387e4fe00c7bd3312b53354cae4943100b7517e396282a8d6eb244a399a9c07b",
-                    "size":  176833356
+                    "url":  "https://github.com/hyp3rstrike/hyperalerts/releases/download/v0.2.13/HyperAlerts.exe",
+                    "sha256":  "f4a39d748ee7d564711ca23161adf5abdf598f03fcc7bcff3d24d10cb6cdc95d",
+                    "size":  176799619
                 }
 }
