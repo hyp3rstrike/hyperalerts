@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+const basePath = process.env.GITHUB_ACTIONS === "true" ? "/hyperalerts" : "";
+const siteUrl = process.env.GITHUB_ACTIONS === "true" ? "https://hyperx64.com/hyperalerts/" : "http://localhost:3000/";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -13,24 +16,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hyperx64.com/hyperalerts/"),
+  metadataBase: new URL(siteUrl),
   title: "Hyper Alerts",
   description: "Local-first stream alerts for OBS and Streamer.bot.",
   icons: {
-    icon: "/hyperalerts/favicon.ico",
-    shortcut: "/hyperalerts/favicon.ico",
-    apple: "/hyperalerts/icons/hyper-alerts-icon.png",
+    icon: `${basePath}/favicon.ico`,
+    shortcut: `${basePath}/favicon.ico`,
+    apple: `${basePath}/icons/hyper-alerts-icon.png`,
   },
   openGraph: {
     title: "Hyper Alerts",
     description: "Local-first stream alerts for OBS and Streamer.bot.",
-    images: ["https://hyperx64.com/hyperalerts/icons/hyper-alerts-icon.png"],
+    images: [`${siteUrl}icons/hyper-alerts-icon.png`],
   },
   twitter: {
     card: "summary",
     title: "Hyper Alerts",
     description: "Local-first stream alerts for OBS and Streamer.bot.",
-    images: ["https://hyperx64.com/hyperalerts/icons/hyper-alerts-icon.png"],
+    images: [`${siteUrl}icons/hyper-alerts-icon.png`],
   },
 };
 

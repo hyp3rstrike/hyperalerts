@@ -50,12 +50,18 @@ export async function getDocBySlug(slug: string): Promise<DocItem | null> {
 }
 
 export function renderMarkdown(markdown: string): string {
+  const normalizedMarkdown = markdown
+    .replace(/^\\#\s+/gm, "# ")
+    .replace(/^\\##\s+/gm, "## ")
+    .replace(/\\\*\*/g, "**")
+    .replace(/\\`/g, "`");
+
   const renderInline = (value: string) =>
     value
       .replace(/`([^`]+)`/g, "<code>$1</code>")
       .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
 
-  const escaped = markdown
+  const escaped = normalizedMarkdown
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");

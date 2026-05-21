@@ -79,6 +79,16 @@ a {
   list-style: decimal;
 }
 
+.ha-doc-content ol li {
+  display: list-item;
+  list-style: decimal;
+}
+
+.ha-doc-content ul li {
+  display: list-item;
+  list-style: disc;
+}
+
 .ha-doc-content code {
   font-family: var(--font-geist-mono), monospace;
   background: #18181b;

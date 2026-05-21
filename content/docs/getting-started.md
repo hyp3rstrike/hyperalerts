@@ -13,9 +13,3 @@ Hyper Alerts is a local-first alert overlay app for OBS and Streamer.bot.
 1. Open the Hyper Alerts **Tools** panel.
 2. Select your Streamer.bot install.
 3. Click **Apply Hyper Alerts Patch**.
-
-## Notes
-
-- Keep the app open while streaming.
-- Update checks run on startup.
-- Your media and config stay local.
