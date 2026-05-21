@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { renderMarkdown } from "@/lib/markdown";
 
 type PanelProps = {
   children: ReactNode;
@@ -82,7 +83,7 @@ export function InfoCard({ title, body }: { title: string; body: string }) {
   return (
     <article className="rounded-2xl border border-zinc-800 bg-zinc-900 p-5">
       <h3 className="text-lg font-semibold">{title}</h3>
-      <p className="ha-muted mt-2 leading-relaxed">{body}</p>
+      <div className="ha-doc-content ha-markdown-compact mt-2" dangerouslySetInnerHTML={{ __html: renderMarkdown(body) }} />
     </article>
   );
 }

@@ -2,6 +2,7 @@ import { PageFrame } from "./components/page-frame";
 import { features, RELEASES_URL, testimonials } from "@/lib/site-data";
 import { LatestReleasePanel } from "./components/latest-release";
 import { CtaButton, InfoCard, Panel } from "./components/ui";
+import { renderMarkdown } from "@/lib/markdown";
 
 export default function Home() {
   return (
@@ -34,7 +35,10 @@ export default function Home() {
           <div className="mt-6 grid gap-4">
             {testimonials.map((item) => (
               <article key={item.quote} className="rounded-2xl border border-zinc-800 bg-zinc-900 p-5">
-                <p className="ha-muted leading-relaxed">&quot;{item.quote}&quot;</p>
+                <div
+                  className="ha-doc-content ha-markdown-compact ha-muted"
+                  dangerouslySetInnerHTML={{ __html: renderMarkdown(`\"${item.quote}\"`) }}
+                />
                 <p className="mt-4 text-sm font-semibold text-zinc-300">
                   -{" "}
                   {item.authorUrl ? (

@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { CtaButton, Panel } from "@/app/components/ui";
+import { renderMarkdown } from "@/lib/markdown";
 
 type LatestManifest = {
   version: string;
@@ -57,7 +58,10 @@ export function LatestReleasePanel() {
       <p className="ha-code text-sm text-[var(--accent)]">CURRENT BUILD</p>
       <h2 className="mt-3 text-3xl font-semibold">v{latestRelease.version}</h2>
       <p className="ha-muted mt-1">Published {latestRelease.publishedAt}</p>
-      <p className="ha-muted mt-5 leading-relaxed">{latestRelease.notes}</p>
+      <div
+        className="ha-doc-content ha-markdown-compact mt-5"
+        dangerouslySetInnerHTML={{ __html: renderMarkdown(latestRelease.notes) }}
+      />
       <CtaButton
         href={latestRelease.url}
         label="Direct download"

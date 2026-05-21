@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { PageFrame } from "@/app/components/page-frame";
 import { CtaButton, Panel } from "@/app/components/ui";
 import { RELEASES_URL } from "@/lib/site-data";
+import { renderMarkdown } from "@/lib/markdown";
 
 type GithubRelease = {
   id: number;
@@ -58,9 +59,10 @@ export default function ReleasesPage() {
                     {new Date(release.published_at).toLocaleDateString("en-US")}
                   </span>
                 </div>
-                <p className="ha-muted mt-3 leading-relaxed">
-                  {(release.body || "No release notes provided.").split("\n")[0]}
-                </p>
+                <div
+                  className="ha-doc-content ha-markdown-compact mt-3"
+                  dangerouslySetInnerHTML={{ __html: renderMarkdown((release.body || "No release notes provided.").split("\n\n")[0]) }}
+                />
                 <CtaButton href={release.html_url} label="Open release" external variant="ghost" className="mt-4 text-sm" />
               </article>
             ))}

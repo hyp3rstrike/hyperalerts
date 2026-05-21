@@ -97,3 +97,19 @@ a {
   padding: 0.1rem 0.35rem;
   color: #e4e4e7;
 }
+
+.ha-markdown-compact h1,
+.ha-markdown-compact h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.ha-markdown-compact p {
+  margin: 0;
+}
+
+.ha-markdown-compact ul,
+.ha-markdown-compact ol {
+  margin: 0.25rem 0 0;
+}
