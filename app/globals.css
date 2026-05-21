@@ -43,5 +43,47 @@ a {
 }
 
 .ha-code {
-  font-family: var(--font-ibm-plex-mono), monospace;
+  font-family: var(--font-geist-mono), monospace;
+}
+
+.ha-doc-content h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.ha-doc-content h2 {
+  font-size: 1.35rem;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.ha-doc-content p,
+.ha-doc-content li {
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+
+.ha-doc-content ul {
+  margin: 0.5rem 0 1rem;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.ha-doc-content ol {
+  margin: 0.5rem 0 1rem;
+  padding-left: 1.25rem;
+  list-style: decimal;
+}
+
+.ha-doc-content code {
+  font-family: var(--font-geist-mono), monospace;
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 6px;
+  padding: 0.1rem 0.35rem;
+  color: #e4e4e7;
 }
