@@ -1,10 +1,10 @@
 ﻿{
-    "version":  "0.2.14",
-    "publishedAt":  "2026-05-24T03:22:51Z",
-    "notes":  "- Adds font animations (animates the font, not the whole alert container)\r\n- Adds local font selection support (as in fonts from your system, with a toggle to use bundled or local)\r\n- Made the UI a little more dense, like me",
+    "version":  "0.2.15",
+    "publishedAt":  "2026-05-24T11:15:22Z",
+    "notes":  "- Added text transform controls (as requested by @kirimae) because using capslock is too hard apparently\r\n- Improved number inputs with a custom react component w/ stepper controls (up/down buttons)\r\n- Set text animation speed to have a decimal point value (e.g. 1.0) with 0.1 step - because it wasn\u0027t clear enough that the value was in seconds\r\n- Renamed form labels to make things easier to know what does what\r\n- Added buttons to the discord, website etc",
     "windows":  {
-                    "url":  "https://github.com/hyp3rstrike/hyperalerts/releases/download/v0.2.14/HyperAlerts.exe",
-                    "sha256":  "f5351f48e710bcdc9f1771ce36cc14bc24d0625cd6543980b52094cdb02d42c5",
-                    "size":  176863317
+                    "url":  "https://github.com/hyp3rstrike/hyperalerts/releases/download/v0.2.15/HyperAlerts.exe",
+                    "sha256":  "83fbefbb49d3a58f0933b9e985ab2d8c85eee184424c465fbab6142bad5bb107",
+                    "size":  177591297
                 }
 }
