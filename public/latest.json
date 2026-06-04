@@ -1,10 +1,10 @@
 ﻿{
-    "version":  "0.2.15",
-    "publishedAt":  "2026-05-24T11:15:22Z",
-    "notes":  "- Added text transform controls (as requested by @kirimae) because using capslock is too hard apparently\r\n- Improved number inputs with a custom react component w/ stepper controls (up/down buttons)\r\n- Set text animation speed to have a decimal point value (e.g. 1.0) with 0.1 step - because it wasn\u0027t clear enough that the value was in seconds\r\n- Renamed form labels to make things easier to know what does what\r\n- Added buttons to the discord, website etc",
+    "version":  "0.2.16",
+    "publishedAt":  "2026-06-04T12:30:59Z",
+    "notes":  "* Fixes an issue with the HyperAlerts -\u003e StreamerBot actions patcher, which I would not have found if I wasn\u0027t troubleshooting an issue for @Kirimae which ended up being pebcak.",
     "windows":  {
-                    "url":  "https://github.com/hyp3rstrike/hyperalerts/releases/download/v0.2.15/HyperAlerts.exe",
-                    "sha256":  "83fbefbb49d3a58f0933b9e985ab2d8c85eee184424c465fbab6142bad5bb107",
-                    "size":  177591297
+                    "url":  "https://github.com/hyp3rstrike/hyperalerts/releases/download/v0.2.16/HyperAlerts.exe",
+                    "sha256":  "312ddce1b89c24063a218e024bb57c412c3f14e52cb58e21f8b2dc786e9dd233",
+                    "size":  177605535
                 }
 }
