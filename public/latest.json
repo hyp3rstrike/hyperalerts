@@ -1,10 +1,10 @@
 ﻿{
-    "version":  "0.2.16",
-    "publishedAt":  "2026-06-04T12:30:59Z",
-    "notes":  "* Fixes an issue with the HyperAlerts -\u003e StreamerBot actions patcher, which I would not have found if I wasn\u0027t troubleshooting an issue for @Kirimae which ended up being pebcak.",
+    "version":  "0.2.17",
+    "publishedAt":  "2026-06-09T11:35:35Z",
+    "notes":  "New Stuff\r\n- Ko-fi is now a real citizen: Commission, Subscription, Resubscription, and Shop Order all work\r\n- You can now set a separate font family, weight, style, and transform for the message line\r\n- Latest Events widget so you can show off the recent chaos on stream\r\n- Alert nav is now grouped by platform with icons because the list was getting ridiculous\r\n\r\nFixes\r\n- Message fonts actually apply now in both global and per-type mode (they weren\u0027t, sorry)\r\n- Ko-fi and YouTube alerts stopped pretending to be Twitch alerts in the Streamer.bot action\r\n- Archivo Black and other named-weight fonts no longer fall back to boring sans-serif\r\n- Old configs with message lines disabled get migrated automatically, no manual fix needed",
     "windows":  {
-                    "url":  "https://github.com/hyp3rstrike/hyperalerts/releases/download/v0.2.16/HyperAlerts.exe",
-                    "sha256":  "312ddce1b89c24063a218e024bb57c412c3f14e52cb58e21f8b2dc786e9dd233",
-                    "size":  177605535
+                    "url":  "https://github.com/hyp3rstrike/hyperalerts/releases/download/v0.2.17/HyperAlerts.exe",
+                    "sha256":  "be3e30e668344d07713ed99739cc7c82da68b8754db5e8acbe7580e9f0c7856a",
+                    "size":  177609705
                 }
 }
